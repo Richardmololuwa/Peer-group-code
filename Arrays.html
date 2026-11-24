@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E1X Academy - Student Score Highlighter</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 2px solid #f97316;
+      border-radius: 8px;
+    }
+    li {
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 4px;
+      list-style: none;
+      background-color: #f3f4f6;
+    }
+    .passed {
+      background-color: #dcfce7;
+      color: #166534;
+      font-weight: bold;
+      border-left: 4px solid #16a34a;
+    }
+    .failed {
+      background-color: #fee2e2;
+      color: #991b1b;
+      border-left: 4px solid #dc2626;
+    }
+    .all-evaluated {
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.25);
+    }
+  </style>
+</head>
+<body>
+  <h2>E1X Academy — JavaScript Cohort Scores</h2>
+  <ul id="score-list">
+    <li data-score="85">Amina — 85%</li>
+    <li data-score="62">Chinedu — 62%</li>
+    <li data-score="91">Zainab — 91%</li>
+    <li data-score="54">Tunde — 54%</li>
+    <li data-score="74">Ngozi — 74%</li>
+  </ul>
+  <button id="evaluate-btn">Highlight Passing Scores</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
